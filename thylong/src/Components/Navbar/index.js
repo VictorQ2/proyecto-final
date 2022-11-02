@@ -6,14 +6,17 @@ import {
   NavMenu,
   NavBtn,
   NavBtnLink,
-  Logo,
+  Titulo,
 } from './NavbarElements';
+
+import ban from './images/Ban.jpg'
+import styles from './css/index.css';
   
 const Navbar = () => {
   return (
     <>
       <Nav>
-        <img src='Components/Navbar/logo.jpg' width='100px' height='100px'></img>
+        <Titulo>Thylong</Titulo>
         <Bars />
   
         <NavMenu>
@@ -21,18 +24,12 @@ const Navbar = () => {
             Inicio
           </NavLink>
           <NavLink to='/events' activeStyle>
-            Productos
+            Crea tu combo
           </NavLink>
           <NavLink to='/annual' activeStyle>
-            Domicilios
+            Colecciones
           </NavLink>
-          <NavLink to='/team' activeStyle>
-            Atencion al cliente
-          </NavLink>
-          <NavLink to='/blogs' activeStyle>
-            Comentarios
-          </NavLink>
-          <NavLink to='/sign-up' activeStyle>
+          <NavLink to='/signup' activeStyle>
             Registrarse
           </NavLink>
           {/* Second Nav */}
@@ -42,6 +39,21 @@ const Navbar = () => {
           <NavBtnLink to='/signin'>Ingresar</NavBtnLink>
         </NavBtn>
       </Nav>
+
+       <figure>
+        <div>
+        <a>
+          <img class='Banner' src={ban}>
+
+          </img>
+        </a>
+        <h1 class='tituloBan'>
+          Best sellers
+        </h1>
+        </div>
+  
+       </figure>
+
     </>
   );
 };

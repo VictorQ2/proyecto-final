@@ -9,20 +9,20 @@ export const Nav = styled.nav `
   display: flex;
   justify-content: space-between;
   padding: 0.2rem calc((100vw - 1000px) / 2);
-  box-shadow: 0px 5px 5px 0px #D34848;
+  box-shadow: 0px 5px 5px 0px black;
   z-index: 12;
   /* Third Nav */
-  /* justify-content: flex-start; */
 `;
 
-/*export const Logo = styled(Link)
+export const Titulo = styled.h1
 `
-  background-image: url(../Images/logo.JPG);
-  background-size: cover;
-  background-position: center;
-  width: 20%;
-  height: 30px;
-`;*/
+  width: 50px;
+  font-size: 30px;
+  height: 50px;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: flex-start;
+`;
 
 export const NavLink = styled(Link)
 `
@@ -39,7 +39,7 @@ export const NavLink = styled(Link)
   }
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: red;
+    background: black;
     color: white;
   }
 `;
@@ -87,7 +87,7 @@ export const NavBtn = styled.nav `
 export const NavBtnLink = styled(Link)
 `
   border-radius: 4px;
-  background: red;
+  background: black;
   padding: 10px 22px;
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
