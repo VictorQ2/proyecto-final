@@ -11,6 +11,8 @@ import {
 
 import ban from './images/Ban.jpg'
 import styles from './css/index.css';
+import Reactplayer from 'react-player';
+import video from './images/video1.mp4';
   
 const Navbar = () => {
   return (
@@ -30,30 +32,49 @@ const Navbar = () => {
             Colecciones
           </NavLink>
           <NavLink to='/signup' activeStyle>
-            Registrarse
+            TikTok
           </NavLink>
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to='/signin'>Ingresar</NavBtnLink>
+          <NavBtnLink to='/signin'>Instagram</NavBtnLink>
         </NavBtn>
       </Nav>
+      <br></br>
 
-       <figure>
-        <div>
-        <a>
-          <img class='Banner' src={ban}>
-
-          </img>
-        </a>
-        <h1 class='tituloBan'>
-          Best sellers
-        </h1>
+      <div class="Banner"></div>
+      <div class="tituloBan">Coleccion Noviembre 2022</div>
+      <div class="flex">
+        <Reactplayer width="450px" height="1200px" class="video" url={video} autoplay loop controls></Reactplayer>
+        <div class="foto1">
+          Candongas: $2USD
+          </div>
+        <div class="foto2">
+          Dragons: $3USD
         </div>
-  
-       </figure>
+        <div class="foto3">
+          Cadenas: $3USD
+        </div>
+        <div class="foto4">
+          WeedFace: $3USD
+        </div>
+        <div class="foto5">
+          Aretas: $1USD
+        </div>
+        <div class="foto6">
+          MoneyGap: $1USD
+        </div>
+      </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <div class="footer">
 
+      </div>
     </>
   );
 };

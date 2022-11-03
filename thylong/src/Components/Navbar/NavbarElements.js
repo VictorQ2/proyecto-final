@@ -16,6 +16,7 @@ export const Nav = styled.nav `
 
 export const Titulo = styled.h1
 `
+  background: white;
   width: 50px;
   font-size: 30px;
   height: 50px;
@@ -26,6 +27,7 @@ export const Titulo = styled.h1
 
 export const NavLink = styled(Link)
 `
+  background: white;
   color: black;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
@@ -45,7 +47,8 @@ export const NavLink = styled(Link)
 `;
 
 export const Bars = styled(FaBars)
-`
+` 
+  background: white;
   display: none;
   color: #808080;
   @media screen and (max-width: 768px) {
@@ -75,6 +78,7 @@ export const NavMenu = styled.div `
 
 export const NavBtn = styled.nav `
   display: flex;
+  background: white;
   align-items: center;
   margin-right: 24px;
   /* justify-content: flex-end;
@@ -87,19 +91,20 @@ export const NavBtn = styled.nav `
 export const NavBtnLink = styled(Link)
 `
   border-radius: 4px;
-  background: black;
+  background: white;
   padding: 10px 22px;
-  color: white;
+  color: black;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   outline: none;
   border: none;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s;
   text-decoration: none;
   margin-left: 24px;
   &:hover {
-    transition: all 0.2s ease-in-out;
-    background: white;
-    color: black;
+    transition: all 0.3s;
+    background: rgb(189,16,181);
+    background: linear-gradient(90deg, rgba(189,16,181,1) 7%, rgba(189,191,34,1) 87%);
+    color: white;
   }
 `;
