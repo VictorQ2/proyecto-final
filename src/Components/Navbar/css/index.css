@@ -1,0 +1,403 @@
+*{
+    margin: none;
+    padding: none;
+}
+
+.Banner{
+    background-image: url(../images/Ban.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 101.3%;
+    height: 14cm;
+    margin: -10px ;
+    box-shadow: 0px 5px 5px 0px black;
+    position: relative;
+    overflow: hidden;
+   
+    object-fit: cover;
+}
+
+.Banner:hover{
+    transform: scale(1.1);
+    transition: 5s;
+}
+
+
+
+.tituloBan{
+    font-size: 50px;
+    font-family: 'Xanh Mono', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+    height: 50px;
+}
+
+.flex{
+    display: grid;
+    margin-top: 10px;
+    width: 100%;
+    height: 30cm;
+    grid-template-areas: "video foto1 foto2"
+                         "video foto3 foto4"
+                         "video foto5 foto6";
+}
+
+.video{
+    grid-area: video;
+    margin: 15px;
+}
+
+.foto1{
+    background-image: url(../images/foto1.jpeg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 5px 5px 0px black;
+    margin: 15px;
+    grid-area: foto1;
+    width: 60vh;
+    color: transparent;
+    text-align:center;
+    font-size: 45px;
+    font-family: 'Xanh Mono', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    position: relative;  
+    overflow: hidden;
+}
+
+.foto1:hover{
+    transform: scale(0.95); 
+    transition: all 0.6s;
+    cursor: pointer;
+    color: rgb(8, 8, 8);
+    text-shadow: 0px 5px 6px rgb(53, 36, 36);
+}
+
+.foto1:hover::after{
+    transform: translateY(0);
+}
+
+.foto1::after{
+    content: "Candongas: $2USD";
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(224, 117, 139);
+    opacity: .8;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .3s;
+}
+
+.foto1:hover{
+    transform: scale(0.95); 
+    transition: all 0.6s;
+    cursor: pointer;
+    color: rgb(8, 8, 8);
+    text-shadow: 0px 5px 6px rgb(53, 36, 36);
+}
+
+.foto2{
+    background-image: url(../images/foto2.jpeg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 5px 5px 0px black;
+    margin: 15px;
+    grid-area: foto2;
+    width: 60vh;
+    color: transparent;
+    text-align:center;
+    font-size: 45px;
+    font-family: 'Xanh Mono', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    position: relative;  
+    overflow: hidden;
+}
+.foto2:hover::after{
+    transform: translateY(0);
+}
+
+.foto2::after{
+    content: "Dragons: $3USD";
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(224, 117, 139);
+    opacity: .8;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .3s;
+}
+
+.foto2:hover{
+    transform: scale(0.95); 
+    transition: all 0.6s;
+    cursor: pointer;
+    color: rgb(8, 8, 8);
+    text-shadow: 0px 5px 6px rgb(53, 36, 36);
+}
+
+.foto3{
+    background-image: url(../images/foto3.jpeg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 5px 5px 0px black;
+    margin: 15px;
+    grid-area: foto3;
+    width: 60vh;
+    color: transparent;
+    text-align:center;
+    font-size: 45px;
+    font-family: 'Xanh Mono', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    position: relative;  
+    overflow: hidden;
+}
+
+.foto3:hover::after{
+    transform: translateY(0);
+}
+
+.foto3::after{
+    content: "Cadenas: $3USD";
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(224, 117, 139);
+    opacity: .8;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .3s;
+}
+
+.foto3:hover{
+    transform: scale(0.95); 
+    transition: all 0.6s;
+    cursor: pointer;
+    color: rgb(8, 8, 8);
+    text-shadow: 0px 5px 6px rgb(53, 36, 36);
+}
+
+.foto4{
+    background-image: url(../images/foto4.jpeg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 5px 5px 0px black;
+    margin: 15px;
+    grid-area: foto4;
+    width: 60vh;
+    color: transparent;
+    text-align:center;
+    font-size: 45px;
+    font-family: 'Xanh Mono', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    position: relative;  
+    overflow: hidden;
+}
+
+.foto4:hover::after{
+    transform: translateY(0);
+}
+
+.foto4::after{
+    content: "WeedFace: $3USD";
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(224, 117, 139);
+    opacity: .8;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .3s;
+}
+
+.foto4:hover{
+    transform: scale(0.95); 
+    transition: all 0.6s;
+    cursor: pointer;
+    color: rgb(8, 8, 8);
+    text-shadow: 0px 5px 6px rgb(53, 36, 36);
+}
+
+.foto5{
+    background-image: url(../images/foto5.jpeg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 5px 5px 0px black;
+    margin: 15px;
+    grid-area: foto5;
+    width: 60vh;
+    color: transparent;
+    text-align:center;
+    font-size: 45px;
+    font-family: 'Xanh Mono', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    position: relative;  
+    overflow: hidden;
+}
+
+.foto5:hover::after{
+    transform: translateY(0);
+}
+
+.foto5::after{
+    content: "Aretas: $1USD";
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(224, 117, 139);
+    opacity: .8;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .3s;
+}
+
+.foto5:hover{
+    transform: scale(0.95); 
+    transition: all 0.6s;
+    cursor: pointer;
+    color: rgb(8, 8, 8);
+    text-shadow: 0px 5px 6px rgb(53, 36, 36);
+}
+
+.foto6{
+    background-image: url(../images/foto6.jpeg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 5px 5px 0px black;
+    margin: 15px;
+    grid-area: foto6;
+    width: 60vh;
+    color: transparent;
+    text-align:center;
+    font-size: 45px;
+    font-family: 'Xanh Mono', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    position: relative;  
+    overflow: hidden;
+}
+
+.foto6:hover{
+    transform: scale(0.95); 
+    transition: all 0.6s;
+    cursor: pointer;
+    color: rgb(8, 8, 8);
+    text-shadow: 0px 5px 6px rgb(53, 36, 36);
+}
+
+.foto6::after{
+    content: "MoneyGap: $1USD";
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(224, 117, 139);
+    opacity: .8;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .3s;
+}
+
+.foto6:hover::after{
+    transform: translateY(0);
+}
+
+.footer{
+    width: 101.3%;
+    height: 10cm;
+    background-color: black;
+    margin: -10px ;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/*:::::Pie de Pagina*/
+figure{
+    background-image: url(../images/footer.jpg);
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: auto;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: rgb(22, 7, 7);
+    margin-right: 10px;
+    background-color: #d9ecff;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
